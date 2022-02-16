@@ -1,0 +1,220 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box !important;
+    list-style: none !important;
+    text-decoration: none !important;
+    font-family: 'Libre Baskerville', serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #E5E5E5;
+}
+
+.navBar{
+    height: 90px;
+    background-color: brown;
+    display: flex;
+    align-items: center;
+    border-top: 2px solid #138496;
+}
+
+.logo{
+    font-size: 30px;
+    padding-left: 7px;
+    color: #FAB005;
+    text-shadow: 2px 2px 1px wheat;
+    cursor: pointer;
+}
+
+.navList{
+    width: 100%;
+    display: flex;
+    place-content: center;
+}
+
+a{
+    padding: 5px;
+    margin: 5px;
+    font-size: 21px;
+    color: wheat;
+}
+
+a:hover{
+    background-color: #138496;
+    border-radius: 5px;
+    color: white;
+    transition: background-color 2s;
+}
+
+.active{
+    background-color: #138496;
+    border-radius: 5px;
+    color: white;
+}
+
+.login{
+    padding-right: 10px;
+    font-size: 25px;
+    color: #FAB005;
+}
+
+.slider-container{
+    height: 600px;
+    width: 100%;
+    display: grid;
+    place-content: center;
+    background-color: #FAB005;
+    border-bottom: 1px solid #ccc;
+}
+
+.slider{
+    height: 450px;
+    width: 100%;
+    background-image: url("img/p1.png");
+    background-repeat: no-repeat;
+    object-fit: cover;
+    animation: pizzaSlider 2s infinite;
+    cursor: pointer;
+}
+
+@keyframes pizzaSlider{
+ 33.3333%{
+     background-image: url("img/p1.png");
+ }
+    66.3333%{
+        background-image: url("img/p2.png");
+    }
+    99.3333%{
+        background-image: url("img/p3.png");
+    }
+}
+
+.foodSection{
+    padding: 30px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.foodBox{
+    height: 340px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    margin: 8px;
+    box-shadow: 1px 1px 2px wheat;
+}
+
+img{
+    object-fit: cover;
+}
+img:hover{
+    opacity: .5;
+    transition: opacity 1s;
+}
+
+h1{
+    border-bottom: 1px solid #ccc;
+    text-shadow: 3px 3px 2px wheat;
+}
+h3{
+    text-shadow: 2px 2px 2px wheat;
+}
+.footerSection{
+    width: 100vw;
+    height: 190px;
+    background-color: #333333;
+    border-top: 3px solid #FAB005;
+}
+.footerItem{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon{
+    font-size: 50px;
+    color: brown;
+}
+
+@media (max-width: 877px) {
+
+    .logo{
+      font-size: 20px;
+    }
+   a{
+       font-size: 18px;
+       margin: 3px;
+       padding: 3px;
+   }
+
+   i{
+       font-size: 18px;
+   }
+
+}
+
+
+.admin-page{
+   padding: 20px;
+}
+
+.side-bar{
+    width: 25%;
+    float: left;
+    height: 100vh;
+}
+button:hover{
+background-color: #183153;
+transition: background-color 2s;
+}
+.content{
+    width: 73%;
+    float: left;
+    height: 100vh;
+    background-color: white;
+    padding: 20px;
+    margin-left: 5px;
+    border-radius: 3px;
+}
+
+
+
+.admin-nav{
+    height: 90px;
+    line-height: 90px;
+    background-color: #183153;
+    border-top: 2px solid #138496;
+    font-size: 30px;
+    font-weight: bold;
+    color: #FFD43B;
+}
+
+
+
+
+.order-summery{
+    
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    
+}
+
+form{
+    border-top: 5px solid #FAB005
+}
+.goToTop{
+background-color: #333333;
+padding-right: 5px;
+    padding-bottom: 10px;
+}
+
+#default-content{
+    text-align: center;
+    line-height: 100vh;
+}
+
